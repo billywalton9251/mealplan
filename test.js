@@ -41,8 +41,8 @@ const quantUp2 = document.querySelector('#up2')
 // add event listener to increase quantity
 quantUp2.addEventListener('click', function(){
   quantity2++
-  protein2= quantity1 * 6
-  fats2 = quantity1 * .35
-  calories2= 31 * quantity1
-  updateQuantity2 (`ounces: ${quantity2}, protein: ${protein2}, fats ${fats2}, calories ${calories1}`)
+  protein2= quantity2 * 6
+  fats2 = quantity2 * .35
+  calories2= 31 * quantity2
+  updateQuantity2 (`ounces: ${quantity2}, protein: ${protein2}, fats ${fats2}, calories ${calories2}`)
 })
