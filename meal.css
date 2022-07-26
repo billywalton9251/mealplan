@@ -1,0 +1,31 @@
+div.carbs {
+position: relative;
+left: 450px;
+top: -450px
+
+}
+
+div.fats {
+    position: relative;
+    
+    top: -500px
+    
+    }
+
+    div.totalMac {
+        position: relative;
+        top: -450px
+        
+        }
+ div.tall {
+position: relative;
+top: -85px;
+left:200px
+            }
+ div.age {
+                position: relative;
+                top: -175px;
+                left:400px
+                            }
+                      
+            

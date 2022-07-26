@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>MealPlan</title>
+    <link rel="stylesheet" href="meal.css">
   
   </head>
   <body>
@@ -13,6 +14,23 @@
     <!-- instructions -->
     <h2>Instructions</h2>
     <P>Click on the Protein, Carb and Fat of you choice.</P>
+    <h4>
+      <label>enter weight</label>
+      <form id="form" onsubmit="return false;"><input type="number" id="weight"/></form>
+   
+  </h4>
+    <div class="tall">
+      <h4><label>enter height</label>
+        <form id="form" onsubmit="return false;"><input type="number" id="weight"/></form></h2>
+  
+      </div>
+      <div class="age"> enter age</label>
+        <input type="number" placeholder="Enter text" >
+        
+        </h2>
+      
+        </div>
+
    </div>
    <h2>Protein</h2>
    <!---Chicken-->
@@ -86,13 +104,107 @@
 
 
 </h2>
-<div class= "totalMac">
-  <h5> total Macros
-    <button id="totalUp">+</button>
-    <b id="total" total=0></b>
+
+<div class = carbs>
+  <h2>Carbohydrates</h2>
+<h5> Cream Of Rice
+  <button id="carbup1">+</button>
+  <button id="carbdown1">-</button>
+  <b id="crmrice"></b>
+</h5>
+
+<h5> Oatmeal
+  <button id="carbup2">+</button>
+  <button id="carbdown2">-</button>
+  <b id="oats"></b>
+</h5>
+
+<h5> Sweet Potato
+  <button id="carbup3">+</button>
+  <button id="carbdown3">-</button>
+  <b id="SWP"></b>
+</h5>
+
+<h5> White  Potato
+  <button id="carbup4">+</button>
+  <button id="carbdown4">-</button>
+  <b id="WHTP"></b>
+</h5>
+
+<h5> White Rice
+  <button id="carbup5">+</button>
+  <button id="carbdown5">-</button>
+  <b id="WHTRice"></b>
+</h5>
+
+<h5> Banana
+  <button id="carbup5">+</button>
+  <button id="carbdown5">-</button>
+  <b id="WHTP"></b>
+</h5>
+<h2 class="fiber carbs">Vegitables</h2>
+<h5> Broccoli
+  <button id="carbup6">+</button>
+  <button id="carbdown6">-</button>
+  <b id="broc"></b>
+</h5>
+<h5> Asparagus
+  <button id="carbup7">+</button>
+  <button id="carbdown7">-</button>
+  <b id="asp"></b>
+
+</h5>
+
+<h5> Green Beans
+  <button id="carbup8">+</button>
+  <button id="carbdown8">-</button>
+  <b id="grbeans"></b>
+</h5>
+</div>
+<div class="fats">
+  <h2>Fats</h2>
+  <h5> Peanutbutter
+    <button id="fat1up">+</button>
+    <button id="fat1down">-</button>
+    <b id="PB"></b>
   </h5>
+  <h5> Almond Butter
+    <button id="fat2up">+</button>
+    <button id="fat2down">-</button>
+    <b id="ab"></b>
+  
+  </h5>
+  
+  <h5> Olive Oil
+    <button id="fat3up">+</button>
+    <button id="fat3up">-</button>
+    <b id="oloil"></b>
+  </h5>
+
+  <h5> Almonds
+    <button id="fat4up">+</button>
+    <button id="fat4up">-</button>
+    <b id="almonds"></b>
+  </h5>
+  <h5> Cashews
+    <button id="fat5up">+</button>
+    <button id="fat5up">-</button>
+    <b id="cashews"></b>
+  </h5>
+
+
+
+
+
 </div>
 
+
+<div class= "totalMac">
+  <h3> Total Macros
+    <button id="totalUp">=</button>
+    <b id="total" total=0></b>
+  </h3>
+</div>
     <script src="test.js"></script>
     
   </body>
