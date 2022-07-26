@@ -1,13 +1,14 @@
 function updateQuantity(displayQuantity) {
-  let quantity1 = document.querySelector('#chounces')
-  quantity1.innerHTML = displayQuantity 
+  quantity1Display= document.querySelector('#chounces')
+  quantity1Display.innerHTML = displayQuantity 
+
 }
 
 // Start chicken variables at 0 since product is in cart
 let quantity1 = 0
 let protein1 =0 
 let fats1 =0
-let calories1 = 0
+let calories1 = 0 
 // Buttons
 const quantUp = document.querySelector('#up1')
 
@@ -24,8 +25,8 @@ quantUp.addEventListener('click', function(){
 
 //steak
 function updateQuantity2(displayQuantity2) {
-  let quantity2 = document.querySelector('#stkounces')
-  quantity2.innerHTML = displayQuantity2
+  quantity2Display = document.querySelector('#stkounces')
+  quantity2Display.innerHTML = displayQuantity2
 }
 
 // Start steak variables at 0 since product is in cart
@@ -45,4 +46,19 @@ quantUp2.addEventListener('click', function(){
   fats2 = quantity2 * .35
   calories2= 31 * quantity2
   updateQuantity2 (`ounces: ${quantity2}, protein: ${protein2}, fats ${fats2}, calories ${calories2}`)
+})
+
+//total
+function updateTotal(displayTotal) {
+  quantityTotal= document.querySelector('#total')
+  quantityTotal.innerHTML = displayTotal
+}
+const totalup = document.querySelector("#totalUp");
+
+
+totalup.addEventListener('click', function(){
+  totalprotein= protein1 + protein2
+  totalfats= fats1 + fats2
+  totalcalories= calories1 + calories2
+  updateTotal (`Total Protein: ${totalprotein}, Total Fats: ${totalfats}, Total Calories: ${totalcalories}`)
 })
